@@ -5,10 +5,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "test": "playwright test",
-        "test:debug": "playwright test --headed",
-        "test:report": "playwright show-report"
+        "lint": "next lint"
     },
     "dependencies": {
         "next": "^14.0.4",
@@ -17,7 +14,6 @@
     },
     "devDependencies": {
         "@next/eslint-plugin-next": "^14.0.4",
-        "@playwright/test": "^1.40.1",
         "@types/node": "20.10.6",
         "@types/react": "18.2.46",
         "autoprefixer": "^10.4.16",
