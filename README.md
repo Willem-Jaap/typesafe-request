@@ -5,8 +5,8 @@ Experimental project to create a typesafe request function.
 ### **Quick setup**
 
 ```
-npm i
-npm run dev
+pnpm i
+pnpm run dev
 ```
 
 ### **Documentation:**
