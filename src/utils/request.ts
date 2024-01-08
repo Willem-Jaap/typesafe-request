@@ -1,20 +1,48 @@
-import fs from 'fs';
-import { json2ts } from 'json-ts';
+// Entities
+interface User {
+    _endpoint: '/users';
+    id: number;
+    name: string;
+    email: string;
+    address: Address;
+}
+
+interface Address {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: Geo;
+}
+
+interface Geo {
+    lat: string;
+    lng: string;
+}
+interface Post {
+    _endpoint: '/posts';
+    id: number;
+    userId: number;
+    title: string;
+    body: string;
+}
+
+type Request = User | Post;
 
 const request = async (
-    input: RequestInfo | URL,
+    // Endpoint prop of Request type
+    input: Request['_endpoint'],
     init?: RequestInit | undefined,
-): Promise<Response> => {
-    const response = await fetch(input, init);
+): Promise<Request> => {
+    const baseUrl = 'https://jsonplaceholder.typicode.com';
+    const response = await fetch(baseUrl + input, init);
 
-    const responseData = await response.text();
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    }
 
-    const types = json2ts(responseData);
-
-    fs.writeFileSync('./.fetch-types.d.ts', types);
-
-    console.log('TypeScript definition saved to ./.fetch-types.d.ts');
-    return response;
+    const data = (await response.json()) as Request;
+    return data;
 };
 
 export default request;
