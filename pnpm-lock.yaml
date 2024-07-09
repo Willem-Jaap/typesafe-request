@@ -22,8 +22,8 @@ importers:
         specifier: ^14.2.4
         version: 14.2.4
       '@types/node':
-        specifier: 20.12.5
-        version: 20.12.5
+        specifier: 20.14.10
+        version: 20.14.10
       '@types/react':
         specifier: 18.2.67
         version: 18.2.67
@@ -204,8 +204,8 @@ packages:
   '@types/json-schema@7.0.12':
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
 
-  '@types/node@20.12.5':
-    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
+  '@types/node@20.14.10':
+    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
   '@types/prop-types@15.7.5':
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -1708,7 +1708,7 @@ snapshots:
 
   '@types/json-schema@7.0.12': {}
 
-  '@types/node@20.12.5':
+  '@types/node@20.14.10':
     dependencies:
       undici-types: 5.26.5
 
