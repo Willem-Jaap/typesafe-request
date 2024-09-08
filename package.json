@@ -30,5 +30,6 @@
             "plugin:@next/next/recommended"
         ]
     },
-    "prettier": "eslint-config-pixel/prettier"
+    "prettier": "eslint-config-pixel/prettier",
+    "packageManager": "pnpm@9.9.0"
 }
