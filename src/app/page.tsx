@@ -1,7 +1,19 @@
-import request from '~utils/request';
+import request from '~utils/api';
+
+// interface Props {
+//     data: {
+//         name: string;
+//         description: string;
+//         categories: string[];
+//         assets: string[];
+//         variants: string[];
+//     };
+// }
 
 const Page = async () => {
-    const response = await request('/users');
+    const response = await request(`/products`, {
+        params: { page: 3, perPage: 10 },
+    });
     console.log(response);
 
     return (
