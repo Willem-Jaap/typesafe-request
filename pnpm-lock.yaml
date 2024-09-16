@@ -19,8 +19,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@next/eslint-plugin-next':
-        specifier: ^14.2.8
-        version: 14.2.8
+        specifier: ^14.2.11
+        version: 14.2.11
       '@types/node':
         specifier: 22.5.4
         version: 22.5.4
@@ -115,8 +115,8 @@ packages:
   '@next/env@14.2.8':
     resolution: {integrity: sha512-L44a+ynqkolyNBnYfF8VoCiSrjSZWgEHYKkKLGcs/a80qh7AkfVUD/MduVPgdsWZ31tgROR+yJRA0PZjSVBXWQ==}
 
-  '@next/eslint-plugin-next@14.2.8':
-    resolution: {integrity: sha512-ue5vcq9Fjk3asACRDrzYjcGMEN7pMMDQ5zUD+FenkqvlPCVUD1x7PxBNOLfPYDZOrk/Vnl4GHmjj2mZDqPW8TQ==}
+  '@next/eslint-plugin-next@14.2.11':
+    resolution: {integrity: sha512-7mw+xW7Y03Ph4NTCcAzYe+vu4BNjEHZUfZayyF3Y1D9RX6c5NIe25m1grHEAkyUuaqjRxOYhnCNeglOkIqLkBA==}
 
   '@next/swc-darwin-arm64@14.2.8':
     resolution: {integrity: sha512-1VrQlG8OzdyvvGZhGJFnaNE2P10Jjy/2FopnqbY0nSa/gr8If3iINxvOEW3cmVeoAYkmW0RsBazQecA2dBFOSw==}
@@ -1642,7 +1642,7 @@ snapshots:
 
   '@next/env@14.2.8': {}
 
-  '@next/eslint-plugin-next@14.2.8':
+  '@next/eslint-plugin-next@14.2.11':
     dependencies:
       glob: 10.3.10
 
