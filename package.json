@@ -15,7 +15,7 @@
     "devDependencies": {
         "@next/eslint-plugin-next": "^15.3.2",
         "@types/node": "22.15.21",
-        "@types/react": "19.1.5",
+        "@types/react": "19.1.6",
         "autoprefixer": "^10.4.21",
         "eslint": "^8.57.1",
         "eslint-config-pixel": "^1.5.0",
