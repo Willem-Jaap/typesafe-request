@@ -9,13 +9,13 @@
     },
     "dependencies": {
         "next": "^15.5.4",
-        "react": "^19.1.1",
+        "react": "^19.2.0",
         "react-dom": "^19.1.1"
     },
     "devDependencies": {
         "@next/eslint-plugin-next": "^15.5.4",
         "@types/node": "24.5.2",
-        "@types/react": "19.1.15",
+        "@types/react": "19.2.0",
         "autoprefixer": "^10.4.21",
         "eslint": "^8.57.1",
         "eslint-config-pixel": "^1.5.0",
