@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "@next/eslint-plugin-next": "^15.5.4",
-        "@types/node": "24.9.0",
+        "@types/node": "24.9.1",
         "@types/react": "19.1.15",
         "autoprefixer": "^10.4.21",
         "eslint": "^8.57.1",
