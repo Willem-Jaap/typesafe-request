@@ -49,7 +49,7 @@ interface PostResource {
 type GetAvailableRoutes<Resource> = Resource extends { endpoint: infer Endpoint }
     ? Endpoint extends string
         ? Resource extends { endpoint: Endpoint; params: infer Params }
-            ? `${Endpoint}${Params extends Record<string, string> ? `/${keyof Params}` : '/test'}`
+            ? `${Endpoint}${Params extends Record<string, string> ? `/${keyof Params & string}` : '/test'}`
             : Resource extends { endpoint: Endpoint }
               ? Endpoint
               : never
@@ -61,7 +61,7 @@ type AllRoutes = GetAvailableRoutes<UserResource | PostResource>;
 const request = async (
     // Endpoint prop of Request type
     input: AllRoutes,
-    init?: RequestInit | undefined,
+    init?: RequestInit,
 ): Promise<Request> => {
     const baseUrl = 'https://jsonplaceholder.typicode.com';
     const response = await fetch(baseUrl + input, init);

@@ -10,6 +10,9 @@ import request from '~utils/api';
 //     };
 // }
 
+// Fetches from API_URL on every request instead of at build time.
+export const dynamic = 'force-dynamic';
+
 const Page = async () => {
     const response = await request(`/products`, {
         params: { page: 3, perPage: 10 },

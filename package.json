@@ -5,31 +5,31 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "eslint .",
+        "typecheck": "tsc --noEmit",
+        "format": "prettier --write \"**/*.{ts,tsx,js,mjs,md,css}\"",
+        "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,md,css}\""
     },
     "dependencies": {
-        "next": "^15.5.6",
+        "next": "^16.3.8",
         "react": "^19.3.0",
-        "react-dom": "^19.1.1"
+        "react-dom": "^19.3.0"
     },
     "devDependencies": {
-        "@next/eslint-plugin-next": "^15.5.4",
+        "@eslint/js": "^9.39.5",
+        "@tailwindcss/postcss": "^4.3.3",
         "@types/node": "26.6.4",
         "@types/react": "19.3.0",
-        "autoprefixer": "^10.6.1",
-        "eslint": "^8.57.1",
-        "eslint-config-pixel": "^1.5.0",
+        "@types/react-dom": "^19.3.0",
+        "eslint": "^9.39.5",
+        "eslint-config-next": "^16.3.8",
+        "eslint-config-prettier": "^10.1.8",
         "json-ts": "^1.6.4",
         "postcss": "^8.5.28",
+        "prettier": "^3.9.9",
         "tailwindcss": "^4.3.3",
-        "typescript": "5.9.3"
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.71.0"
     },
-    "eslintConfig": {
-        "extends": [
-            "pixel",
-            "plugin:@next/next/recommended"
-        ]
-    },
-    "prettier": "eslint-config-pixel/prettier",
-    "packageManager": "pnpm@9.9.0"
+    "packageManager": "pnpm@10.33.0"
 }
