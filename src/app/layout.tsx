@@ -12,7 +12,7 @@ const AlbertSansFont = Albert_Sans({
 });
 
 const RootLayout = async ({ children }: Props) => {
-    await request('https://jsonplaceholder.typicode.com/posts');
+    await request('/posts');
 
     return (
         <html className={AlbertSansFont.className}>

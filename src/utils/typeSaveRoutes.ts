@@ -36,8 +36,7 @@ type RouteSegmentInsersion<
     : Segment;
 
 type GetTemplateRoute<T extends string> =
-    | ConvertRouteToTemplateRoute<T, false>
-    | ConvertRouteToTemplateRoute<T, true>;
+    ConvertRouteToTemplateRoute<T, false> | ConvertRouteToTemplateRoute<T, true>;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const request = async <T extends Route<Routes>>(route: T) => {

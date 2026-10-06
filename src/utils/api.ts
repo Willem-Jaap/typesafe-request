@@ -77,7 +77,8 @@ const request = async <Route extends Routes['requestRoute']>(
     options?: RequestInit & { params: Extract<Routes, { route: Route }>['params'] },
 ) => {
     // @ts-expect-error Incorrect type
-    const fullRoute = route + new URLSearchParams(options?.params).toString();
+    const query = new URLSearchParams(options?.params).toString();
+    const fullRoute = `${process.env.API_URL ?? ''}${route}${query ? `?${query}` : ''}`;
     const response = await fetch(fullRoute);
     return response.json() as Promise<ViaRequestRoute<Route>['data']>;
 };
